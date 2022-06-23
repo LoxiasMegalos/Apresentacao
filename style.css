@@ -57,7 +57,7 @@ body{
     width: 1200px;
     display: grid;
     grid-template-columns: 30% 70%;
-    column-gap: 100px;
+    column-gap: 70px;
 }
 
 .biografia__foto{
@@ -118,11 +118,13 @@ body{
 .biografia__texto-ie{
     margin-top: 30px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: auto 1fr;
     grid-template-areas: 
     "ititulo etitulo" 
     "ilista elista"
     ;
+    column-gap: 80px;
+    width: 80%;
 }
 
 .biografia__i-titulo{
@@ -171,7 +173,7 @@ body{
 .skills{
     background: var(--cor-secundaria);
     width: 100%;
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
     justify-content: space-around;
 }
