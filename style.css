@@ -174,11 +174,265 @@ body{
     background: var(--cor-secundaria);
     width: 100%;
     margin-top: 50px;
-    display: flex;
-    justify-content: space-around;
 }
 
 .skills__titulo{
-    margin-top: 120px;
+    margin-top: 50px;
     font-size: 45px;
+    text-align: center;
+}
+
+.skills__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills__info-img{
+    width: 100px;
+    height: 100px;
+}
+
+.skills__container{
+    margin: 3rem 0 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 50px;
+}
+
+.skills__info-titulo{
+    font-size: 28px;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.experiencia{
+    margin-top: 7rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 1200px;
+    margin-bottom: 50px;
+}
+
+.experiencia__titulo, .titulo__geral{
+    font-weight: 500;
+    font-size: 46px;
+}
+
+.experiencia__card{
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.199);
+    padding: 25px;
+    transition: all 1s;
+    margin-bottom: 50px;
+}
+
+.experiencia__titulo-cargo{
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+}
+
+.experiencia__titulo-empresa{
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+}
+
+.experiencia__tempo-espaco{
+    color: #8f8c8c;
+    margin-bottom: 0.5rem;
+}
+
+.experiencia__descricao{
+    line-height: 1.5;
+}
+
+.experiencia__descricao strong{
+    font-weight: 700;
+}
+
+.experiencia__card:hover{
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.267);
+}
+
+.atual::before{
+    content: url(./img/blackdot.png);
+    transform: scale(.05);
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    left: -50px;
+    top: 95px;
+}
+.atual{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.antigo::before{
+    content: url(./img/wdot.png);
+    transform: scale(.05);
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    left: -50px;
+    top: 75px;
+}
+.antigo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.projetos{
+    background: var(--cor-secundaria);
+    width: 100%;
+}
+
+.section__container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 1200px;
+    margin: 7rem auto 50px auto;
+}
+
+.projetos__card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    background: white;
+    padding: 25px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+}
+
+.card__img{
+    width: 100px;
+}
+
+.card__info{
+    display: flex;
+    flex-direction: column;
+}
+
+.projeto__titulo{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.projeto__descricao{
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
+.projeto__autor{
+    color: #8f8c8c;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+
+.botao__codigo{
+    border-radius: 5px;
+    border: 1px solid brown;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    width: 70px;
+    transition: all 1s;
+}
+.projeto__code{
+    text-decoration: none;
+    color: brown;
+}
+
+
+.botao__codigo-img{
+    width: 20px;
+    margin-right: 0.65rem;
+}
+.botao__codigo-img-h{
+    width: 20px;
+    margin-right: 0.65rem;
+    display: none;
+}
+
+.contato{
+    margin-top: 5rem;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-bottom: 7rem;
+}
+
+.contato__container{
+    display: flex;
+    flex-direction: column;
+}
+
+.input_pattern{
+    border: 1px solid #a8a0a0;
+    margin-bottom: 1.2rem;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.input_pattern:active{
+    border: #000000 1px solid;
+}
+
+.input_pattern::placeholder{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contato__msg{
+    height: 100px;
+    position: relative;
+}
+
+
+.contato__msg::placeholder{
+    position: absolute;
+    top: 10px;
+}
+
+.contato__send{
+    border: 1px solid black;
+    padding: 5px 10px;
+    font-size: 18px;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 10%;
+    text-align: center;
+
+    transition: all 1s;
+}
+
+.contato__send:hover{
+    border: 1px solid white;
+    color: white;
+    background: black;
+}
+
+.rodape{
+    text-align: center;
+    background: var(--cor-secundaria);
+    padding: 7rem 0 5rem 0;
+}
+
+.copy::before{
+    content: "\00A9";
+    margin-right: 1rem;
 }
