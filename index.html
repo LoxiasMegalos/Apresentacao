@@ -13,15 +13,15 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header class="cabecalho">
+        <header class="cabecalho" id="myHeader">
             <div class="cabecalho__container">
                 <h1 class="cabecalho__titulo">Murillo Vicentini de Alcantara</h1>
                 <nav class="cabecalho__nav">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Experiência</a></li>
-                    <li><a href="#">Projetos</a></li>
-                    <li><a href="#">Currículo</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#experienciaid">Experiência</a></li>
+                    <li><a href="#projetosid">Projetos</a></li>
+                    <li><a href="./curriculo/Murillo Vicentini de Alcantara - 2022.7.pdf" target="_blank">Currículo</a></li>
+                    <li><a href="#contatoid">Contato</a></li>
                 </nav>
             </div>
         </header>
@@ -33,10 +33,10 @@
                     <p class="biografia__cargo">Software Engineer</p>
                     <p class="biografia__empresa">ﾠ</p>
                     <ul class="biografia__redes">
-                        <li><a href="#"><img src="./img/email_icon.png" alt="icone de e-mail" class="icone__rede"></a></li>
-                        <li><a href="#"><img src="./img/gh_icon.png" alt="icone de e-mail" class="icone__rede"></a></li>
-                        <li><a href="#"><img src="./img/ld_icon.png" alt="icone de e-mail" class="icone__rede"></a></li>
-                        <li><a href="#"><img src="./img/cv_icon.png" alt="icone de e-mail" class="icone__rede"></a></li>
+                        <li><a href="murillo.alkantara@gmail.com" target="_blank"><img src="./img/email_icon.png" alt="icone de e-mail" class="icone__rede"></a></li>
+                        <li><a href="https://github.com/LoxiasMegalos" target="_blank"><img src="./img/gh_icon.png" alt="icone de github" class="icone__rede"></a></li>
+                        <li><a href="https://www.linkedin.com/in/murillo-alcantara/" target="_blank"><img src="./img/ld_icon.png" alt="icone de linkedin" class="icone__rede"></a></li>
+                        <li><a href="./curriculo/Murillo Vicentini de Alcantara - 2022.7.pdf" target="_blank"><img src="./img/cv_icon.png" alt="icone de curriculo" class="icone__rede"></a></li>
                     </ul>
                 </div>
                 <div class="biografia__texto">
@@ -120,9 +120,19 @@
                 </div>
             </section>
 
-            <section class="experiencia">
+            <section class="experiencia" id="experienciaid">
                 <h2 class="experiencia__titulo">Experiência</h2>
                 <div class="experiencia__container">
+                    <div class="antigo">
+                        <article class="experiencia__card">
+                            <h3 class="experiencia__titulo-cargo">Android Developer</h3>
+                            <h4 class="experiencia__titulo-empresa">Generation</h4>
+                            <p class="experiencia__tempo-espaco">Jul 2022 - Out 2022 | São Paulo SP</p>
+                            <p class="experiencia__descricao">
+                                Desenvolvedor Android - Bootcamp de programação, experiência e projetos de lógica de programação e programação orientada a objetoc com Kotlin, construção de API em TypeScrypt utilizando NestJs e NodeJs, Modelagem de banco de dados e Desenvolvimento de Aplicações Android utilizando arquitetura MVVM, LiveData, Retrofit Hilt e Dagger2, Room. Implementação de metodologia ágil Scrum com Sprint e Dailies.
+                            </p>
+                        </article>
+                    </div>
                     <div class="antigo">
                         <article class="experiencia__card">
                             <h3 class="experiencia__titulo-cargo">SAP Funcional</h3>
@@ -147,51 +157,96 @@
                 </div>
             </section>
 
-            <section class="projetos">
+            <section class="projetos" id="projetosid">
                 <div class="section__container">
                     <h2 class="projetos__titulo titulo__geral">Projetos</h2>
                     <div class="projetos__container">
                         <article class="projetos__card">
                             <div class="card__info">
-                                <h3 class="projeto__titulo">Java</h3>
-                                <p class="projeto__descricao">Treinamento Java e repositório de Informações</p>
+                                <h3 class="projeto__titulo">Rede Social - DesenvolvMED</h3>
+                                <p class="projeto__descricao">Rede Social para médicos e pacientes - arquitetura MVVM, Livedata, Hilt - Dagger2, Retrofit, e Room para login automático</p>
                                 <a href="#" class="projeto__autor">Murillo Vicentini de Alcantara</a>
-                                <a href="https://github.com/LoxiasMegalos/JAVA" target="_blank">
+                                <a href="https://github.com/LoxiasMegalos/DesenvolvMed" target="_blank">
                                     <div class="botao__codigo">
                                         <img src="./img/gh_icon.png" alt="" class="botao__codigo-img">
-                                        <a href="https://github.com/LoxiasMegalos/JAVA" target="_blank" class="projeto__code">Code</a>
+                                        <a href="https://github.com/LoxiasMegalos/DesenvolvMed" target="_blank" class="projeto__code">Code</a>
                                     </div>
                                 </a>
                             </div>
-                            <img src="./img/javapro.png" alt="" class="card__img">
+                            <img src="./img/android.png" alt="" class="card__img">
                         </article>
                         <article class="projetos__card">
                             <div class="card__info">
-                                <h3 class="projeto__titulo">Java</h3>
-                                <p class="projeto__descricao">Treinamento Java e repositório de Informações</p>
+                                <h3 class="projeto__titulo">Construção de API utilizando NestJS</h3>
+                                <p class="projeto__descricao">API construída em NestJs com dependencias entre tabelas, 1 para 1 e 1 para N, deploy realizado em Render</p>
                                 <a href="#" class="projeto__autor">Murillo Vicentini de Alcantara</a>
-                                <a href="https://github.com/LoxiasMegalos/JAVA" target="_blank">
+                                <a href="https://github.com/LoxiasMegalos/DesenvolvMED-API-NestJS" target="_blank">
                                     <div class="botao__codigo">
                                         <img src="./img/gh_icon.png" alt="" class="botao__codigo-img">
-                                        <a href="https://github.com/LoxiasMegalos/JAVA" target="_blank" class="projeto__code">Code</a>
+                                        <a href="https://github.com/LoxiasMegalos/DesenvolvMED-API-NestJS" target="_blank" class="projeto__code">Code</a>
                                     </div>
-                                </a>
-                                
+                                </a>               
                             </div>
-                            <img src="./img/javapro.png" alt="" class="card__img">
+                            <img src="./img/nestjs.svg" alt="" class="card__img">
+                        </article>
+                        <article class="projetos__card">
+                            <div class="card__info">
+                                <h3 class="projeto__titulo">Rede Social com Programação Orientada a Objetos</h3>
+                                <p class="projeto__descricao">Projeto de lógica de programação e Programação Orientada a Objetos utilizando Kotlin</p>
+                                <a href="#" class="projeto__autor">Murillo Vicentini de Alcantara</a>
+                                <a href="https://github.com/LoxiasMegalos/ProjetoModulo1KotlinS" target="_blank">
+                                    <div class="botao__codigo">
+                                        <img src="./img/gh_icon.png" alt="" class="botao__codigo-img">
+                                        <a href="https://github.com/LoxiasMegalos/ProjetoModulo1Kotlin" target="_blank" class="projeto__code">Code</a>
+                                    </div>
+                                </a>               
+                            </div>
+                            <img src="./img/kotlin.png" alt="" class="card__img">
+                        </article>
+                        <article class="projetos__card">
+                            <div class="card__info">
+                                <h3 class="projeto__titulo">Cadastro de Novas Empresas Python</h3>
+                                <p class="projeto__descricao">Projeto em Python com conexão a API da Receita Federal e Correios para criar planilhas em Excel sobre empresas</p>
+                                <a href="#" class="projeto__autor">Murillo Vicentini de Alcantara</a>
+                                <a href="https://github.com/LoxiasMegalos/Projeto_Python_Cadastros" target="_blank">
+                                    <div class="botao__codigo">
+                                        <img src="./img/gh_icon.png" alt="" class="botao__codigo-img">
+                                        <a href="https://github.com/LoxiasMegalos/Projeto_Python_Cadastros" target="_blank" class="projeto__code">Code</a>
+                                    </div>
+                                </a>               
+                            </div>
+                            <img src="./img/python.png" alt="" class="card__img">
+                        </article>
+                        <article class="projetos__card">
+                            <div class="card__info">
+                                <h3 class="projeto__titulo">Aplicativos Android</h3>
+                                <p class="projeto__descricao">Repositório com aplicativos Android - Consultas e Portfólio</p>
+                                <a href="#" class="projeto__autor">Murillo Vicentini de Alcantara</a>
+                                <a href="https://github.com/LoxiasMegalos/AndroidStudioGrind" target="_blank">
+                                    <div class="botao__codigo">
+                                        <img src="./img/gh_icon.png" alt="" class="botao__codigo-img">
+                                        <a href="https://github.com/LoxiasMegalos/AndroidStudioGrind" target="_blank" class="projeto__code">Code</a>
+                                    </div>
+                                </a>               
+                            </div>
+                            <img src="./img/androidverde.png" alt="" class="card__img">
                         </article>
                     </div>
                 </div>
             </section>
 
-            <section class="contato">
+            <section class="contato" id="contatoid">
                 <h2 class="contato__titulo titulo__geral">Contato</h2>
+                <form action="https://formspree.io/f/moqbkylv"
+                        method="POST">
                 <div class="contato__container">
-                    <input type="text" placeholder="Nome" class="contato__nome input_pattern">
-                    <input type="text" placeholder="E-mail" class="contato__email input_pattern">
-                    <input type="text" placeholder="Mensagem" class="contato__msg input_pattern">
-                    <a href="#" class="contato__send">Enviar</a>
+
+                    <input type="email" placeholder="E-mail" name="email" class="contato__email input_pattern">
+                    <textarea type="text" placeholder="Mensagem" name="message" class="contato__msg input_pattern"></textarea>
+                    <button class="contato__send" type="submit" value="Send">Enviar</button>
+                    
                 </div>
+            </form>
             </section>
         </main>
 
